@@ -1,0 +1,103 @@
+﻿{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onTimer"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"pictureButton": {
+					"type": "pictureButton",
+					"left": 386,
+					"top": 123,
+					"width": 77,
+					"height": 66,
+					"events": [
+						"onClick"
+					],
+					"borderStyle": "dotted",
+					"picture": "/RESOURCES/rect.png",
+					"rowCount": 4,
+					"dataSource": "vPicture"
+				},
+				"Button1": {
+					"type": "button",
+					"text": "Set ->",
+					"top": 140,
+					"left": 215,
+					"width": 101,
+					"height": 33,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button1.4dm",
+					"focusable": false
+				},
+				"files": {
+					"type": "listbox",
+					"left": 14,
+					"top": 18,
+					"width": 181,
+					"height": 277,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"resizingMode": "legacy",
+					"showHeaders": false,
+					"dataSource": "Form:C1466.images",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"currentItemSource": "Form:C1466.current",
+					"hideFocusRing": true,
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Header1"
+							},
+							"name": "Column1",
+							"footer": {
+								"name": "Footer1"
+							},
+							"dataSource": "This:C1470.name"
+						}
+					]
+				}
+			},
+			"entryOrder": [
+				"files",
+				"Button1"
+			]
+		}
+	],
+	"geometryStamp": 43,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}
